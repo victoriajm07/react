@@ -1,9 +1,11 @@
+/*estilo de la página en general*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/*estilo del cuerpo de mis tareas*/
 html, body {
   color: white;
   background-color: #1b1b32;
@@ -11,6 +13,7 @@ html, body {
   margin-top: 40px;
 }
 
+/*estilo del titulo*/
 h1 {
   color: #1b1b32;
   font-size: 25px;
@@ -25,6 +28,7 @@ h1 {
   align-items: center;
 }
 
+/*estilo de la imagen del fondo*/
 .freecodecamp-logo-contenedor {
   width: 100%;
   margin: 20px;

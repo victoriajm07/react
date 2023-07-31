@@ -1,3 +1,4 @@
+/*estilo de las tarjetas de las tareas*/
 .tarea-contenedor {
     width: 500px;
     min-height: 65px;
@@ -12,7 +13,7 @@
     cursor: pointer;
 }
 
-/**/
+/* Cambio de color de las diferentes tarjetas*/
 
 .tarea-contenedor:nth-child(3n + 1) {
     background-color: #1b1b32;
@@ -36,12 +37,14 @@
     overflow-wrap: anywhere;
 }
 
+/*icono cruz*/
 .tarea-icono {
     width: 25px;
     height: 25px;
     margin: 25px;
 }
 
+/* Tarea completada*/
 .tarea-contenedor.completada {
     background-color: #5a01a7;
     text-decoration: line-through;
