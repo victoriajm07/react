@@ -5,8 +5,9 @@ import Tarea from './Tarea';
 
 function ListaDeTareas() {
 
-    const [tareas, setTareas] = useState([]);
+    const [tareas, setTareas] = useState([]); //asigna un estado al array
 
+    //inserta una nueva tarea
     const agregarTarea = tarea => {
         if (tarea.texto.trim()) {
             tarea.texto = tarea.texto.trim();
@@ -15,11 +16,13 @@ function ListaDeTareas() {
         }
     }
 
+    //metodo para eliminar una tarea
     const eliminarTarea = id => {
         const tareasActualizadas = tareas.filter(tarea => tarea.id !== id);
         setTareas(tareasActualizadas);
     }
 
+    // metodo para tachar una tarea cuanto este realizada
     const completarTarea = id => {
         const tareasActualizadas = tareas.map(tarea => {
             if (tarea.id === id) {
@@ -30,8 +33,10 @@ function ListaDeTareas() {
         setTareas(tareasActualizadas);
     }
 
+    /* llama al componente TareaFormulario y asigna una serie de propiedades */
     return (
-        <>
+        <>  
+        
             <TareaFormulario onSubmit={agregarTarea}/>
             <div className='tareas-lista-contenedor'>
                 {
